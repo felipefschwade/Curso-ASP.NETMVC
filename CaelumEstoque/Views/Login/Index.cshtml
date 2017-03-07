@@ -1,0 +1,14 @@
+﻿<div class="row">
+    <form method="post" action="@Url.Action("Autentica", "Login")">
+        <p class="text-danger">@Html.ValidationMessage("usuario.Invalido")</p>
+        <div class="form-group">
+            <label for="login">Login:</label>
+            <input id="login" class="form-control" name="usuario.Nome"/>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" class="form-control" name="usuario.Senha" />
+        </div>
+        <input class="btn btn-primary" type="submit" value="Login" />
+    </form>
+</div>
